@@ -2,12 +2,13 @@
 #include <iostream>
 using namespace std;
 #include <cmath>
-CPersona::CPersona(double , double , int , char )
+CPersona::CPersona(double A, double B, int C, char D,double E)
 {
-	int m_edad = 0;
-	double m_peso = 0;
-	double m_altura = 0;
-	char m_sexo = 0;
+	int m_edad = A;
+	double m_peso = B;
+	double m_altura = C;
+	char m_sexo = D;
+	double m_IMC = E;
 }
 
 
@@ -45,7 +46,9 @@ char CPersona::getSexo()
 }
 double CPersona::IMC()
 {
-	if (m_altura > 0) {
+	if (m_altura > 0) 
+	{
+		
 		return static_cast<float>(m_peso / pow(m_altura, 2));
 	}
 	else {
