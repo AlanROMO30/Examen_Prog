@@ -56,5 +56,3 @@ double CPersona::IMC()
 	}
 }
 
-//hi
-//hola :)
