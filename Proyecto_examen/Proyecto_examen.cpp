@@ -1,9 +1,10 @@
 
 #include <iostream>
-#include "CPersona.h"
+#include"CActv.h"
 using namespace std;
 
 CPersona per;
+CActv actv;
 double altura, peso;
 int edad;
 char sexo;
@@ -27,9 +28,9 @@ int main()
     cin >> sexo;
     per.setSexo(sexo);
 
-    cout << "\n Para una persona  de sexo "<< per.getSexo() << "," << per.getEdad() << "anios , " << per.getPeso() << " KG , y "<< per.getAltura()<< "m de altura,Su indice de masa corporal es  " << per.IMC() << endl;
-    
-
+    cout << "Dados los datos introducidos su IMC(Indice de Masa Corporal:" << per.IMC() << endl;
+    cout << "Y el estado en el que se encuentra es de:" << actv.CatIMC();
+        cout << "(1-Bajo peso,2-Peso normal,3-Sobrepeso,4-Obesidad clase 1,5-Obesidad clase 2,6-Obesidad clase 3";
 
 
     return 0;
