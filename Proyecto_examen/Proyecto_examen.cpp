@@ -10,19 +10,20 @@ char sexo;
 
 int main()
 {
-    cout << "\nDigite su edad:";
+    cout << "Invierte en ti mismo y cosecha los frutos de una vida más saludable y feliz." << endl;
+    cout << "\nDigite su edad:" << endl;
     cin >> edad;
     per.setEdad(edad);
 
-    cout << "\nDigite su peso:";
+    cout << "\nDigite su peso:" << endl;
     cin >> peso;
     per.setPeso(peso);
 
-    cout << "\nDigite su altura: ";
+    cout << "\nDigite su altura: " << endl;
     cin >> altura;
     per.setAltura(altura);
 
-    cout << "\nEspecifique sexo: (M para masculino  y F para femenino)";
+    cout << "\nEspecifique sexo: (M para masculino  y F para femenino)" << endl;
     cin >> sexo;
     per.setSexo(sexo);
 
