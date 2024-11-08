@@ -53,3 +53,5 @@ double CPersona::IMC()
 		return 0;
 	}
 }
+
+//hola :)
