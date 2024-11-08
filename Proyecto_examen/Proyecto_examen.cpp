@@ -1,6 +1,7 @@
 
 #include <iostream>
-#include"CActv.h"
+#include "CPersona.h"
+#include "CActv.h"
 using namespace std;
 
 CPersona per;
@@ -8,10 +9,13 @@ CActv actv;
 double altura, peso;
 int edad;
 char sexo;
+CActv act;
+int pasos;
+
 
 int main()
 {
-    cout << "Invierte en ti mismo y cosecha los frutos de una vida más saludable y feliz." << endl;
+    cout << "Invierte en ti mismo y cosecha los frutos de una vida mas saludable y feliz." << endl;
     cout << "\nDigite su edad:" << endl;
     cin >> edad;
     per.setEdad(edad);
@@ -28,9 +32,13 @@ int main()
     cin >> sexo;
     per.setSexo(sexo);
 
-    cout << "Dados los datos introducidos su IMC(Indice de Masa Corporal:" << per.IMC() << endl;
-
-    cout << "Y el estado en el que se encuentra es de:" << actv.CatIMC();
+    cout << "Para una persona  de sexo "<< per.getSexo() << ", " << per.getEdad() << "anios, " << per.getPeso() << " KG, y "<< per.getAltura()<< "m de altura, Su indice de masa corporal es  " << per.IMC() << endl;
+    
+    cout << "Muy bien ahora con estos datos recopilados se comenzara a dar recomendaciones " << endl;
+    cout << "para ello introduzca el numero de pasos que da aproximadamente al dia" << endl;
+    cin >> pasos;
+    act.calConsumidas(pasos);
+    cout << "\nCalorias consumidas: " << act.calConsumidas() << "Kcal" << endl;
 
 
 
