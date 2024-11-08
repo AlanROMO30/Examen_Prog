@@ -8,7 +8,7 @@ CPersona per;
 CActv actv;
 double altura, peso;
 int edad;
-char sexo;
+char sexo; 
 CActv act;
 int pasos;
 
@@ -35,7 +35,7 @@ int main()
     per.setSexo(sexo);
 
     cout << "\nPara una persona de sexo " << per.getSexo() << ", " << per.getEdad()
-        << " aÃ±os, " << per.getPeso() << " KG, y " << per.getAltura() << " m de altura" << endl;
+        << " años, " << per.getPeso() << " KG, y " << per.getAltura() << " m de altura" << endl;
 
     cout << "\nDados los datos introducidos su IMC (Indice de Masa Corporal): "
         << per.IMC() << endl;
@@ -44,9 +44,9 @@ int main()
     per.IMC(); 
     cout << "Y el estado en el que se encuentra es de: " << actv.CatIMC() << endl;
 
-    
+   
     cout << "Muy bien, ahora con estos datos recopilados se comenzar a dar recomendaciones." << endl;
-    cout << "Para ello, introduzca el nÃºmero de pasos que da aproximadamente al da: ";
+    cout << "Para ello, introduzca el número de pasos que da aproximadamente al da: ";
     cin >> pasos;
     actv.calConsumidas(peso, altura, pasos);
 

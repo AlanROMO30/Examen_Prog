@@ -15,6 +15,7 @@ public :
 	void setPeso(double);
 	void setAltura(double);
 	void setSexo(char);
+	void setIMC(double);
 	int getEdad();
 	double getPeso();
 	double getAltura();

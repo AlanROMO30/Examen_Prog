@@ -43,16 +43,20 @@ char CPersona::getSexo()
 {
 	return m_sexo;
 }
-double CPersona::IMC()
+void CPersona::setIMC(double r)
 {
 	if (m_altura > 0) 
 	{
 		m_IMC = (m_peso / (m_altura * m_altura));
-		return m_IMC;
+		
 	}
 	else {
 		cout << "Error: La altura debe ser mayor que cero." << endl;
-		return 0;
+		m_IMC = 0;
 	}
+}
+double CPersona::IMC()
+{
+	return m_IMC;
 }
 
