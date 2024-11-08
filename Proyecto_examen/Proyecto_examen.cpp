@@ -29,8 +29,9 @@ int main()
     per.setSexo(sexo);
 
     cout << "Dados los datos introducidos su IMC(Indice de Masa Corporal:" << per.IMC() << endl;
+
     cout << "Y el estado en el que se encuentra es de:" << actv.CatIMC();
-        cout << "(1-Bajo peso,2-Peso normal,3-Sobrepeso,4-Obesidad clase 1,5-Obesidad clase 2,6-Obesidad clase 3";
+
 
 
     return 0;
