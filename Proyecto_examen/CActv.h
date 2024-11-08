@@ -7,7 +7,7 @@ class CActv :
     double m_CalCons;
     double m_CalRecom;
 public:
-    double CatIMC();
+    char CatIMC();
     double calConsumidas();
     double CaLrecomendas();
 
