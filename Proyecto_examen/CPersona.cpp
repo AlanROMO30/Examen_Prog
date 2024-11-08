@@ -1,7 +1,6 @@
 #include "CPersona.h"
 #include <iostream>
 using namespace std;
-#include <cmath>
 CPersona::CPersona(double A, double B, int C, char D,double E)
 {
 	int m_edad = A;
@@ -48,13 +47,14 @@ double CPersona::IMC()
 {
 	if (m_altura > 0) 
 	{
-		
-		return static_cast<float>(m_peso / pow(m_altura, 2));
+		m_IMC = (m_peso / (m_altura * m_altura));
+		return m_IMC;
 	}
 	else {
 		cout << "Error: La altura debe ser mayor que cero." << endl;
 		return 0;
 	}
 }
+
 //hi
 //hola :)

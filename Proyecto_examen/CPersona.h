@@ -1,7 +1,7 @@
 #pragma once
 class CPersona
 {
-private:
+protected:
 	double m_altura;
 	double m_peso;
 	int m_edad;
