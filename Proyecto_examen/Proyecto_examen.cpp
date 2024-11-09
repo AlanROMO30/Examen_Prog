@@ -16,7 +16,7 @@ int objet;
 
 int main()
 {
-    cout << "Invierte en ti mismo y cosecha los frutos de una vida más saludable y feliz." << endl;
+    cout << "Invierte en ti mismo y cosecha los frutos de una vida mas saludable y feliz." << endl;
     cout << "\nDigite su edad: ";
     cin >> edad;
     per.setEdad(edad);
@@ -60,6 +60,7 @@ int main()
     cin >> objet;
 
     actv.ActRecoDes(actv.getCIMC(), objet);
+    cout << actv.getActRecoDes();
 
     return 0;
 }
