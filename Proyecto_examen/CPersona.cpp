@@ -63,33 +63,33 @@ double CPersona::IMC()
 void CPersona::setCIMC()
 {
     if (m_IMC < 18.5) {
-		cout << "IMC BAJO";
+		cout <<  "BAJO";
         m_calcIMC = 1;
     }
     else if (m_IMC <= 24.9) {
-		cout << "IMC NORMAL";
+		cout << " NORMAL";
         m_calcIMC = 2;
     }
     else if (m_IMC <= 29.9) {
-		cout << "IMC SOBREPESO ";
+		cout << " SOBREPESO ";
         m_calcIMC = 3;
     }
     else if (m_IMC <= 34.9) {
-		cout << "IMC OBESIDAD I ";
+		cout << " OBESIDAD I ";
         m_calcIMC = 4;
     }
     else if (m_IMC <= 39.9) {
-		cout << "IMC OBESIDAD II ";
+		cout << " OBESIDAD II ";
 		m_calcIMC = 5;
     }
     else if (m_IMC >= 40) {
-		cout << "IMC OBESIDAD III ";
+		cout << " OBESIDAD III ";
 		m_calcIMC = 6;
     }
     else {
         m_calcIMC = -1; 
     }
-    }
+  }
 int CPersona::getCIMC() 
 {
 	return m_calcIMC;

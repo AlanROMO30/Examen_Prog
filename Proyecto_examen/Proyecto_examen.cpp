@@ -11,14 +11,12 @@ int edad;
 char sexo;
 CActv act;
 int pasos;
+int objet;
 
 
 int main()
 {
     cout << "Invierte en ti mismo y cosecha los frutos de una vida más saludable y feliz." << endl;
-
-
- 
     cout << "\nDigite su edad: ";
     cin >> edad;
     per.setEdad(edad);
@@ -36,7 +34,7 @@ int main()
     per.setSexo(sexo);
 
     cout << "\nPara una persona de sexo " << per.getSexo() << ", " << per.getEdad()
-        << " años, " << per.getPeso() << " KG, y " << per.getAltura() << " m de altura" << endl;
+        << " anios, " << per.getPeso() << " KG, y " << per.getAltura() << " m de altura" << endl;
     per.setIMC();
 
 
@@ -47,17 +45,21 @@ int main()
 
     per.IMC();
     per.setCIMC();
-    cout << "Y el estado en el que se encuentra es de: " << per.getCIMC() << endl;
+   
 
 
     cout << "Muy bien, ahora con estos datos recopilados se comenzaran a dar recomendaciones." << endl;
     cout << "Para ello, introduzca el numero de pasos que da aproximadamente al dia: ";
     cin >> pasos;
 
-
     actv.calConsumidas(peso, altura, pasos);
 
-    cout << "\nCalorías consumidas: " << actv.getcalorias() << " Kcal" << endl;
+    cout << "\nCalorias consumidas: " << actv.getcalorias() << " Kcal" << endl;
+
+    cout << "Cual es el objetivo que deseas llevar a cabo" <<endl<<"(1-Bajar de peso,2-Mejorar rendimiento,3-Mantenerse en forma,4-Rutina por preincripcion medica): ";
+    cin >> objet;
+
+    actv.ActRecoDes(actv.getCIMC(), objet);
 
     return 0;
 }
