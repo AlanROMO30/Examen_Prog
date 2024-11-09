@@ -38,8 +38,6 @@ int CActv::CatIMC(CPersona) {
         return 6;
     }
 
-    return -1;
-}
 void CActv::calConsumidas(double peso, double altura, int ps) 
 {
     double dis = (ps * altura * 0.45) / 1000 ;
