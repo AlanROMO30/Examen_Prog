@@ -36,17 +36,18 @@ int main()
 
     cout << "\nPara una persona de sexo " << per.getSexo() << ", " << per.getEdad()
         << " años, " << per.getPeso() << " KG, y " << per.getAltura() << " m de altura" << endl;
+    per.setIMC();
 
     cout << "\nDados los datos introducidos su IMC (Indice de Masa Corporal): "
         << per.IMC() << endl;
 
  
     per.IMC(); 
-    cout << "Y el estado en el que se encuentra es de: " << actv.CatIMC() << endl;
+    cout << "Y el estado en el que se encuentra es de: " << actv.CatIMC(per.IMC()) << endl;
 
    
     cout << "Muy bien, ahora con estos datos recopilados se comenzar a dar recomendaciones." << endl;
-    cout << "Para ello, introduzca el número de pasos que da aproximadamente al da: ";
+    cout << "Para ello, introduzca el numero de pasos que da aproximadamente al dia: ";
     cin >> pasos;
     actv.calConsumidas(peso, altura, pasos);
 

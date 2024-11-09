@@ -1,7 +1,7 @@
 #pragma once
 class CPersona
 {
-protected:
+
 	double m_altura;
 	double m_peso;
 	int m_edad;
@@ -15,7 +15,7 @@ public :
 	void setPeso(double);
 	void setAltura(double);
 	void setSexo(char);
-	void setIMC(double);
+	void setIMC();
 	int getEdad();
 	double getPeso();
 	double getAltura();
