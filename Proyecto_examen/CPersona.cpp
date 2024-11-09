@@ -1,13 +1,14 @@
 #include "CPersona.h"
 #include <iostream>
 using namespace std;
-CPersona::CPersona(double A, double B, int C, char D,double E)
+CPersona::CPersona(double A, double B, int C, char D,double E, int F)
 {
-	 m_edad = A;
+	 m_edad = C;
 	 m_peso = B;
-	 m_altura = C;
+	 m_altura = A;
 	 m_sexo = D;
 	 m_IMC = E;
+     m_calcIMC = F;
 }
 
 
@@ -59,4 +60,37 @@ double CPersona::IMC()
 {
 	return m_IMC;
 }
-
+void CPersona::setCIMC()
+{
+    if (m_IMC < 18.5) {
+		cout << "IMC BAJO";
+        m_calcIMC = 1;
+    }
+    else if (m_IMC <= 24.9) {
+		cout << "IMC NORMAL";
+        m_calcIMC = 2;
+    }
+    else if (m_IMC <= 29.9) {
+		cout << "IMC SOBREPESO ";
+        m_calcIMC = 3;
+    }
+    else if (m_IMC <= 34.9) {
+		cout << "IMC OBESIDAD I ";
+        m_calcIMC = 4;
+    }
+    else if (m_IMC <= 39.9) {
+		cout << "IMC OBESIDAD II ";
+		m_calcIMC = 5;
+    }
+    else if (m_IMC >= 40) {
+		cout << "IMC OBESIDAD III ";
+		m_calcIMC = 6;
+    }
+    else {
+        m_calcIMC = -1; 
+    }
+    }
+int CPersona::getCIMC() 
+{
+	return m_calcIMC;
+}

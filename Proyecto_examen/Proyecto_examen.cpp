@@ -8,14 +8,15 @@ CPersona per;
 CActv actv;
 double altura, peso;
 int edad;
-char sexo; 
+char sexo;
 CActv act;
 int pasos;
 
 
 int main()
 {
-    cout << "Invierte en ti mismo y cosecha los frutos de una vida mas saludable y feliz." << endl;
+    cout << "Invierte en ti mismo y cosecha los frutos de una vida más saludable y feliz." << endl;
+
 
  
     cout << "\nDigite su edad: ";
@@ -38,20 +39,25 @@ int main()
         << " años, " << per.getPeso() << " KG, y " << per.getAltura() << " m de altura" << endl;
     per.setIMC();
 
+
+    per.setIMC();
     cout << "\nDados los datos introducidos su IMC (Indice de Masa Corporal): "
         << per.IMC() << endl;
 
- 
-    per.IMC(); 
-    cout << "Y el estado en el que se encuentra es de: " << actv.CatIMC(per.IMC()) << endl;
 
-   
-    cout << "Muy bien, ahora con estos datos recopilados se comenzar a dar recomendaciones." << endl;
+    per.IMC();
+    per.setCIMC();
+    cout << "Y el estado en el que se encuentra es de: " << per.getCIMC() << endl;
+
+
+    cout << "Muy bien, ahora con estos datos recopilados se comenzaran a dar recomendaciones." << endl;
     cout << "Para ello, introduzca el numero de pasos que da aproximadamente al dia: ";
     cin >> pasos;
+
+
     actv.calConsumidas(peso, altura, pasos);
 
-    cout << "\nCalorias consumidas: " << actv.getcalorias() << " Kcal" << endl;
+    cout << "\nCalorías consumidas: " << actv.getcalorias() << " Kcal" << endl;
 
     return 0;
 }
