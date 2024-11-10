@@ -25,7 +25,7 @@ public :
 	char getSexo();
 	double IMC();
 	int getCIMC() ;
-
+	int setnumIMC();
 };
 
 

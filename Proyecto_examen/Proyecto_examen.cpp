@@ -48,7 +48,7 @@ int main()
    
 
 
-    cout << "Muy bien, ahora con estos datos recopilados se comenzaran a dar recomendaciones." << endl;
+    cout << "Muy bien, ahora con estos datos recopilados se comenzaran a dar recomendaciones."  << endl;
     cout << "Para ello, introduzca el numero de pasos que da aproximadamente al dia: ";
     cin >> pasos;
 
@@ -58,9 +58,11 @@ int main()
 
     cout << "Cual es el objetivo que deseas llevar a cabo" <<endl<<"(1-Bajar de peso,2-Mejorar rendimiento,3-Mantenerse en forma,4-Rutina por preincripcion medica): ";
     cin >> objet;
+    int b;
+    b = actv.setnumIMC();
+    cout << "El valor de IMC " << b << " y de object es " << objet << endl;
 
-    actv.ActRecoDes(actv.getCIMC(), objet);
-    cout << actv.getActRecoDes();
+    actv.ActRecoDes(b,objet);
 
     return 0;
 }

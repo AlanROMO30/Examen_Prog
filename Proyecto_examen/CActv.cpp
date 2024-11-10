@@ -219,6 +219,10 @@ void CActv::ActRecoDes(int IMC, int oBJECT)
 			<< "" << endl;
 		m_actreco = 23;
 	}	
+	else {
+		cout << "Parametros no validos" << endl;
+		m_actreco = -1;
+	}
 }
 int CActv::getActRecoDes()
 {

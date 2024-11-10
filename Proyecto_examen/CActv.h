@@ -13,7 +13,7 @@ public:
     void calConsumidas(double = 0, double = 0, int = 1);
     double getcalorias();
     double CaLrecomendas();
-    void ActRecoDes(int=0,int=0);
+    void ActRecoDes(int,int);
     int getActRecoDes();
 
 };

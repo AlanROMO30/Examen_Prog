@@ -90,6 +90,33 @@ void CPersona::setCIMC()
         m_calcIMC = -1; 
     }
   }
+
+int CPersona::setnumIMC()
+{
+	if (m_IMC < 18.5) {
+		return 1;
+	}
+	else if (m_IMC <= 24.9) {
+
+		return 2;
+	}
+	else if (m_IMC <= 29.9) {
+		 return 3;
+	}
+	else if (m_IMC <= 34.9) {
+		return 4;
+	}
+	else if (m_IMC <= 39.9) {
+		return 5;
+	}
+	else if (m_IMC >= 40) {
+		return 6;
+	}
+	else {
+		m_calcIMC = -1;
+	}
+}
+
 int CPersona::getCIMC() 
 {
 	return m_calcIMC;
