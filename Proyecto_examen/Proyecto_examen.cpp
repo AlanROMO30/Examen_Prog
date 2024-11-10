@@ -39,29 +39,35 @@ int main()
 
 
     per.setIMC();
-    cout << "\nDados los datos introducidos su IMC (Indice de Masa Corporal): "
+    cout << "\nDados los datos introducidos su IMC (Indice de Masa Corporal) es: "
         << per.IMC() << endl;
-
+        
+    cout << "\n///////////////";
 
     per.IMC();
-    per.setCIMC();
+  per.setCIMC();
+  
+  cout << "///////////////"<<endl;
+
+
+
+
+   
    
 
 
-    cout << "Muy bien, ahora con estos datos recopilados se comenzaran a dar recomendaciones."  << endl;
-    cout << "Para ello, introduzca el numero de pasos que da aproximadamente al dia: ";
+    cout << "\nMuy bien, ahora con estos datos recopilados se comenzaran a dar recomendaciones."  << endl;
+    cout << "\nPara ello, introduzca el numero de pasos que da aproximadamente al dia: "<<endl;
     cin >> pasos;
 
     actv.calConsumidas(peso, altura, pasos);
 
     cout << "\nCalorias consumidas: " << actv.getcalorias() << " Kcal" << endl;
 
-    cout << "Cual es el objetivo que deseas llevar a cabo" <<endl<<"(1-Bajar de peso,2-Mejorar rendimiento,3-Mantenerse en forma,4-Rutina por preincripcion medica): ";
+    cout << "\nCual es el objetivo que deseas llevar a cabo" <<endl<<"(1-Bajar de peso,2-Mejorar rendimiento,3-Mantenerse en forma,4-Rutina por preincripcion medica): ";
     cin >> objet;
     int b;
     b = actv.setnumIMC();
-    cout << "El valor de IMC " << b << " y de object es " << objet << endl;
-
     actv.ActRecoDes(b,objet);
 
     return 0;
