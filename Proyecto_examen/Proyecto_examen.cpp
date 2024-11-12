@@ -24,11 +24,11 @@ int main()
     {
         per.setEdad(edad);
 
-        cout << "\nDigite su peso: ";
+        cout << "\nDigite su peso en Kg : ";
         cin >> peso;
         per.setPeso(peso);
 
-        cout << "\nDigite su altura: ";
+        cout << "\nDigite su altura en Metros : ";
         cin >> altura;
         per.setAltura(altura);
 
@@ -65,7 +65,7 @@ int main()
 
         actv.calConsumidas(peso, altura, pasos);
 
-        cout << "\nCalorias consumidas: " << actv.getcalorias() << " Kcal" << endl;
+        cout << "\nCalorias quemada: " << actv.getcalorias() << " Kcal" << endl;
 
         cout << "\nCual es el objetivo que deseas llevar a cabo" << endl << "(1-Bajar de peso,2-Mejorar rendimiento,3-Mantenerse en forma,4-Rutina por preincripcion medica): ";
         cin >> objet;
