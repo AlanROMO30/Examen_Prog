@@ -67,7 +67,7 @@ void CPersona::setCIMC()
 		cout <<  "BAJO";
         m_calcIMC = 1;
     }
-    else if (m_IMC <= 24.9) && (m_sexo == 'M') {
+    else if (m_IMC <= 24.9) && (m_sexo == 'M')) {
 		cout << " NORMAL";
         m_calcIMC = 2;
     }
