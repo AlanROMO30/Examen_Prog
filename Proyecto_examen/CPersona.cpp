@@ -62,27 +62,28 @@ double CPersona::IMC()
 }
 void CPersona::setCIMC()
 {
-    if (m_IMC < 18.5) {
+    if ((m_IMC < 18.5)&&(m_sexo== 'M' ))
+	{
 		cout <<  "BAJO";
         m_calcIMC = 1;
     }
-    else if (m_IMC <= 24.9) {
+    else if (m_IMC <= 24.9) && (m_sexo == 'M') {
 		cout << " NORMAL";
         m_calcIMC = 2;
     }
-    else if (m_IMC <= 29.9) {
+    else if (m_IMC <= 29.9) && (m_sexo == 'M') {
 		cout << " SOBREPESO ";
         m_calcIMC = 3;
     }
-    else if (m_IMC <= 34.9) {
+    else if (m_IMC <= 34.9) && (m_sexo == 'M') {
 		cout << " OBESIDAD I ";
         m_calcIMC = 4;
     }
-    else if (m_IMC <= 39.9) {
+    else if (m_IMC <= 39.9) && (m_sexo == 'M') {
 		cout << " OBESIDAD II ";
 		m_calcIMC = 5;
     }
-    else if (m_IMC >= 40) {
+    else if (m_IMC >= 40) && (m_sexo == 'M') {
 		cout << " OBESIDAD III ";
 		m_calcIMC = 6;
     }
@@ -93,26 +94,58 @@ void CPersona::setCIMC()
 
 int CPersona::setnumIMC()
 {
-	if (m_IMC < 18.5) {
-		return 1;
+	if ((m_IMC < 18.5) && (m_sexo == 'M'))
+	{
+		cout << "BAJO";
+		m_calcIMC = 1;
 	}
-	else if (m_IMC <= 24.9) {
-
-		return 2;
+	else if (m_IMC <= 24.9) && (m_sexo == 'M') {
+		cout << " NORMAL";
+		m_calcIMC = 2;
 	}
-	else if (m_IMC <= 29.9) {
-		 return 3;
+	else if (m_IMC <= 29.9) && (m_sexo == 'M') {
+		cout << " SOBREPESO ";
+		m_calcIMC = 3;
 	}
-	else if (m_IMC <= 34.9) {
-		return 4;
+	else if (m_IMC <= 34.9) && (m_sexo == 'M') {
+		cout << " OBESIDAD I ";
+		m_calcIMC = 4;
 	}
-	else if (m_IMC <= 39.9) {
-		return 5;
+	else if (m_IMC <= 39.9) && (m_sexo == 'M') {
+		cout << " OBESIDAD II ";
+		m_calcIMC = 5;
 	}
-	else if (m_IMC >= 40) {
-		return 6;
+	else if (m_IMC >= 40) && (m_sexo == 'M') {
+		cout << " OBESIDAD III ";
+		m_calcIMC = 6;
 	}
-	else {
+	else if ((m_IMC < 18.5) && (m_sexo == 'F'))
+	{
+		cout << "BAJO";
+		m_calcIMC = 1;
+	}
+	else if (m_IMC <= 24.9) && (m_sexo == 'F') {
+		cout << " NORMAL";
+		m_calcIMC = 2;
+	}
+	else if (m_IMC <= 29.9) && (m_sexo == 'F') {
+		cout << " SOBREPESO ";
+		m_calcIMC = 3;
+	}
+	else if (m_IMC <= 34.9) && (m_sexo == 'F') {
+		cout << " OBESIDAD I ";
+		m_calcIMC = 4;
+	}
+	else if (m_IMC <= 39.9) && (m_sexo == 'F') {
+		cout << " OBESIDAD II ";
+		m_calcIMC = 5;
+	}
+	else if (m_IMC >= 40) && (m_sexo == 'F') {
+		cout << " OBESIDAD III ";
+		m_calcIMC = 6;
+	}
+	else 
+	{
 		m_calcIMC = -1;
 	}
 }
